@@ -120,3 +120,17 @@ Fri, Apr 18, 2025  1:43:57 AM:
  tests:  16|1
 total_score: 60/70
 9d9a29b
+Fri, Apr 18, 2025  1:51:56 AM: 
+ hashmap.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:76:39: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+     for(long k = 0 ; k < old_capacity , k++){
+                                       ^
+hashmap.c:76:44: error: expected ';' before ')' token
+     for(long k = 0 ; k < old_capacity , k++){
+                                            ^
+cc1.exe: all warnings being treated as errors
+6213a6c
