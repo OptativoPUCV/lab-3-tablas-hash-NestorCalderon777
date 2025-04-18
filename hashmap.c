@@ -44,7 +44,6 @@ void insertMap(HashMap * map, char * key, void * value) {
     long index = hash(key, map->capacity);
 
     while(map->buckets[index] != NULL){
-
         if(is_equal(map->buckets[index]->key, key)) return;
         index = (index + 1) % map->capacity;
     }
@@ -106,7 +105,7 @@ void eraseMap(HashMap * map,  char * key) {
     long index = hash(key, map->capacity);
 
     while(map->buckets[index] != NULL){
-        if(strcmp(map->buckets[index]->key, key) == 0){
+        if(is_equal(map->buckets[index]->key, key)){
             map->buckets[index]->key = NULL;
             map->size--;
             return;  
