@@ -102,3 +102,9 @@ hashmap.c:125:22: error: assignment makes integer from pointer without a cast [-
                       ^
 cc1.exe: all warnings being treated as errors
 2e9edcc
+Fri, Apr 18, 2025  1:38:51 AM: 
+ hashmap.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+ tests:  12|2
+total_score: 50/70
+a4fff80
