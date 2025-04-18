@@ -36,3 +36,14 @@ Fri, Apr 18, 2025  1:15:36 AM:
  tests:  8|3
 total_score: 40/70
 e351744
+Fri, Apr 18, 2025  1:21:08 AM: 
+ hashmap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'eraseMap':
+hashmap.c:95:30: error: statement with no effect [-Werror=unused-value]
+     map->buckets[index]->key == NULL;
+                              ^
+cc1.exe: all warnings being treated as errors
+618cf4e
