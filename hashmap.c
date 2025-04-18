@@ -127,13 +127,12 @@ Pair * searchMap(HashMap * map,  char * key) {
         index = (index + 1) % map->capacity;
     }
 
-
     return NULL;
 }
 
 Pair * firstMap(HashMap * map) {
     for(long k = 0 ; k < map->capacity ; k++){
-        if(map->buckets[k] != NULL && map->buckets[k]->key != NULL){
+        if(map->buckets[k] != NULL){
             map->current = k;
             return map->buckets[k];
         }
