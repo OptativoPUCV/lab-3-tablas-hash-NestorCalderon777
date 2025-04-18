@@ -91,3 +91,14 @@ Fri, Apr 18, 2025  1:34:27 AM:
  tests:  11|2
 total_score: 50/70
 0f34104
+Fri, Apr 18, 2025  1:35:34 AM: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'firstMap':
+hashmap.c:125:22: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+         map->current = map->buckets[0];
+                      ^
+cc1.exe: all warnings being treated as errors
+2e9edcc
