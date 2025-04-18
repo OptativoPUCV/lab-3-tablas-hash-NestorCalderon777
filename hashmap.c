@@ -103,15 +103,10 @@ HashMap * createMap(long capacity) {
 
 void eraseMap(HashMap * map,  char * key) {    
     long index = hash(key, map->capacity);
+    Pair ** ParBuscado = searchMap(map, key);
+    ParBuscado[index]->key = NULL;
+    map->size--;
 
-    while(map->buckets[index] != NULL){
-        if(is_equal(map->buckets[index]->key, key)){
-            map->buckets[index]->key = NULL;
-            map->size--;
-            return;  
-        }
-        index = (index + 1) % map->capacity;
-    }
     return;
 
 }

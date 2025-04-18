@@ -188,3 +188,14 @@ Fri, Apr 18, 2025 12:44:46 PM:
  tests:  17|0
 total_score: 70/70
 164fdae
+Fri, Apr 18, 2025 12:57:46 PM: 
+ hashmap.c | 11 +++--------
+ 1 file changed, 3 insertions(+), 8 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'eraseMap':
+hashmap.c:106:26: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+     Pair ** ParBuscado = searchMap(map, key);
+                          ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+70781f2
